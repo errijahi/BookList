@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="shortcut icon" href="./images/Documents_icon_-colord-_noun_project_5020.svg_.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="./search.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-text">
+            <h1  class="banner-font" >Book list</h1>
+        </div>
+        <div class="banner-navbar">
+            <a href="./index.html" class="active1">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a>
+        </div>
+    </div>
+
+        <div class="all">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for titles.." title="Type in a name"><br><br>
+
+        <h2>Genres</h2>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('Action and adventure')"> Action and adventure</button>
+            <button class="btn" onclick="filterSelection('Alternate history')"> Alternate history</button>
+            <button class="btn" onclick="filterSelection('Anthology')"> Anthology</button>
+            <button class="btn" onclick="filterSelection('Children')"> Children</button>
+
+            <button class="btn" onclick="filterSelection('Classic')"> Classic</button>
+            <button class="btn" onclick="filterSelection('Comic book')"> Comic book</button>
+            <button class="btn" onclick="filterSelection('Drama')"> Drama</button>
+            <button class="btn" onclick="filterSelection('Sports and leisure')"> Sports and leisure</button>
+            <button class="btn" onclick="filterSelection('Crime')"> Crime</button>
+            <button class="btn" onclick="filterSelection('Fantasy')"> Fantasy</button>
+            <button class="btn" onclick="filterSelection('Horror')">Horror</button>
+
+            <button class="btn" onclick="filterSelection('Mystery')">Mystery</button>
+            <button class="btn" onclick="filterSelection('Poetry')">Poetry</button>
+            <button class="btn" onclick="filterSelection('Political thriller')">Political thriller</button>
+
+            <button class="btn " onclick="filterSelection('Romance')">Romance</button>
+            <button class="btn" onclick="filterSelection('Satire')">Satire</button>
+            <button class="btn" onclick="filterSelection('science fiction')">science fiction</button>
+            <button class="btn" onclick="filterSelection('Short story')">Short story</button>
+
+            <button class="btn" onclick="filterSelection('Business/economics')">Business/economics</button>
+            <button class="btn" onclick="filterSelection('Crafts/hobbies')">Crafts/hobbies</button>
+            <button class="btn" onclick="filterSelection('Cookbook')">Cookbook</button>
+            <button class="btn" onclick="filterSelection('Diary')">Diary</button>
+            <button class="btn" onclick="filterSelection('Dictionary')">Dictionary</button>
+
+            <button class="btn" onclick="filterSelection('Thriller')">Thriller</button>
+            <button class="btn" onclick="filterSelection('Western')">Western</button>
+            <button class="btn" onclick="filterSelection('Art/architecture')">Art/architecture</button>
+            <button class="btn" onclick="filterSelection('Autobiography')">Autobiography</button>
+            <button class="btn" onclick="filterSelection('Biography')">Biography</button>
+
+            <button class="btn" onclick="filterSelection('Encyclopedia')">Encyclopedia</button>
+            <button class="btn" onclick="filterSelection('Health/fitness')">Health/fitness</button>
+            <button class="btn" onclick="filterSelection('History')">History</button>
+
+            <button class="btn" onclick="filterSelection('Humor')">Humor</button>
+            <button class="btn" onclick="filterSelection('Journal')">Journal</button>
+            <button class="btn" onclick="filterSelection('Philosophy')">Philosophy</button>
+
+            <button class="btn" onclick="filterSelection('Religion')">Religion</button>
+            <button class="btn" onclick="filterSelection('Science')">Science</button>
+
+        </div>
+
+        <div class="flex-container">
+        <div class="container" id="myUL">
+          
+            <div class="filterDiv Philosophy Classic">
+               <h3>The republic</h3>
+               <img src="./images/51xRQBAi5FL._SX346_BO1,204,203,200_.jpg">
+                <textarea readonly="true" rows="19" cols="19">The Republic is a Socratic dialogue, written by Plato around 380 BC, concerning the definition of justice, the order and character of the just city-state and the just man—for this reason, ancient readers used the name On Justice as an alternative title (not to be confused with the spurious dialogue also titled On Justice). The dramatic date of the dialogue has been much debated and though it might have taken place some time during the Peloponnesian War, "there would be jarring anachronisms if any of the candidate specific dates between 432 and 404 were assigned". It is Plato's best-known work and has proven to be one of the most intellectually and historically influential works of philosophy and political theory. In it, Socrates along with various Athenians and foreigners discuss the meaning of justice and examine whether or not the just man is happier than the unjust man by considering a series of different cities coming into existence "in speech", culminating in a city called Kallipolis, which is ruled by philosopher-kings; and by examining the nature of existing regimes. The participants also discuss the theory of forms, the immortality of the soul, and the roles of the philosopher and of poetry in society.
+            </textarea>
+            </div>
+         
+
+            <div class="filterDiv Philosophy Classic">
+                <h3>Meditations of Marcus Aurelius</h3>
+                <img src="./images/61NlZgSMyML.jpg">
+                <textarea readonly="true" rows="19" cols="19">One of the most significant books ever written by a head of state, the Meditations are a collection of philosophical thoughts by the Emperor Marcus Aurelius (121 - 180 ce). Covering issues such as duty, forgiveness, brotherhood, strength in adversity and the best way to approach life and death, the Meditations have inspired thinkers, poets and politicians since their first publication more than 500 years ago. Today, the book stands as one of the great guides and companions - a cornerstone of Western thought. </textarea>
+            </div>
+
+            <div class="filterDiv Philosophy Classic">
+                <h3>Letters from a Stoic</h3>
+                <img src="./images/seneca-stoic.jpg">
+                <textarea readonly="true" rows="19" cols="19">A philosophy that saw self-possession as the key to an existence lived 'in accordance with nature', Stoicism called for the restraint of animal instincts and the severing of emotional ties. These beliefs were formulated by the Athenian followers of Zeno in the fourth century BC, but it was in Seneca (c. 4 BC- AD 65) that the Stoics found their most eloquent advocate. Stoicism, as expressed in the Letters, helped ease pagan Rome's transition to Christianity, for it upholds upright ethical ideals and extols virtuous living, as well as expressing disgust for the harsh treatment of slaves and the inhumane slaughters witnessed in the Roman arenas. Seneca's major contribution to a seemingly unsympathetic creed was to transform it into a powerfully moving and inspiring declaration of the dignity of</textarea>
+            </div>
+
+            <div class="filterDiv Philosophy">
+                <h3>The Birth of Tragedy</h3>
+                <img src="./images/frederic-nic.the birth.jpg">
+                <textarea readonly="true" rows="19" cols="19">The Birth of Tragedy itself is structured around an explanation of the rise of literature in Greek culture. The artistic impulse first manifests itself with the invention of the pantheon of Olympic gods, then with the parallel creations of the Apollonian epic and Dionysian lyric verse. These two forms are later united in Greek tragedy, which represents the acme of human thought and expression. This high point, Nietzsche argues, is followed by a decline from the time of Euripides to Socrates. Nietzsche then argues for the primacy of the arts over philosophy as the means for understanding human existence, and he closes with a foreshadowing of the possible rebirth of tragedy in his own contemporary German culture.
+            </textarea>
+            </div>
+
+            <div class="filterDiv Philosophy">
+                <h3>BEYOND GOOD AND EVIL</h3>
+                <img src="./images/fredeic-nic-beyon good and .jpg">
+                <textarea readonly="true" rows="19" cols="19">This carefully crafted ebook: "BEYOND GOOD AND EVIL" is formatted for your eReader with a functional and detailed table of contents.
+              In "Beyond Good and Evil" Nietzsche accuses past philosophers of lacking critical sense and blindly accepting dogmatic premises in their consideration of morality. The work moves into the realm "beyond good and evil" in the sense of leaving behind the traditional morality which Nietzsche subjects to a destructive critique in favour of what he regards as an affirmative approach.
+              Friedrich Nietzsche (1844–1900) was a German philosopher, cultural critic, poet, philologist, and Latin and Greek scholar whose work has exerted a profound influence on Western philosophy and modern intellectual history. Because of Nietzsche's evocative style and provocative ideas, his philosophy generates passionate reactions. His works remain controversial, due to varying interpretations and misinterpretations of his work. In the Western philosophy tradition, Nietzsche's writings have been described as the unique case of free revolutionary thought, that is, revolutionary in its structure and problems, although not tied to any revolutionary project
+              Helen Zimmern (1846–1934) was naturalised British writer and translator born in Germany. She was instrumental in making European culture more accessible in English.</textarea>
+            </div>
+
+            <div class="filterDiv History">
+                <h3>Ancient Rome</h3>
+                <img src="./images/rome-histroy-fixed.jpg">
+                <textarea readonly="true" rows="19" cols="19">Ancient Rome is the story of the greatest empire the world has ever known. Focusing on six turning points in Roman history, Simon Baker's absorbing narrative charts the rise and fall of a political machine unmatched in its brutality, genius, and lust for power. From the conquest of the Mediterranean in the 3rd century BC to the destruction of the empire at the hands of barbarian invaders 700 years later, we discover the pivotal episodes in Roman history. At the heart of this account are some of the most powerful rulers in history—men like Julius Caesar, Augustus, Nero, and Constantine. Putting flesh on the bones of these legendary figures, Baker looks beyond the dusty caricatures to explore their real motivations, ambitions, intrigues, and rivalries. The superb narrative, full of energy and imagination, is a brilliant distillation of the latest scholarship and a wonderfully evocative account of ancient Rome.</textarea>
+            </div>
+
+            <div class="filterDiv Action and adventure science fiction">
+                <h3>The Wild Robot</h3>
+                <img src="./images/the-wild-robot.jpg">
+                <textarea readonly="true" rows="19" cols="19">Can a robot survive in the wilderness?
+
+              When robot Roz opens her eyes for the first time, she discovers that she is all alone on a remote, wild island. She has no idea how she got there or what her purpose is--but she knows she needs to survive. After battling a violent storm and escaping a vicious bear attack, she realizes that her only hope for survival is to adapt to her surroundings and learn from the island's unwelcoming animal inhabitants.
+              
+              As Roz slowly befriends the animals, the island starts to feel like home--until, one day, the robot's mysterious past comes back to haunt her.
+              
+              From bestselling and award-winning author and illustrator Peter Brown comes a heartwarming and action-packed novel about what happens when nature and technology collide.</textarea>
+            </div>
+
+            <div class="filterDiv Alternate history">
+                <h3>WHAT IF?</h3>
+                <img src="./images/what if.jpg">
+                <textarea readonly="true" rows="19" cols="19">
+              Travel through time and discover how the magical world has shaped our history. Uncover the truth behind the events in our past.
+
+Fifteen talented authors bring you a dynamic collection of alternate history fantasy epics in one amazing collection.
+
+
+AN ALTERNATE HISTORY OF THE WORLD
+
+30 BC
+With her husband dead, her country invaded by the Romans and herself imprisoned by Emperor Octavian, Cleopatra slowly brings, to her lips, the poison that will end the pain. But, Cleopatra’s hand is stayed by her loyal handmaiden Na’eemah. With promises of miracles, Na’eemah has just one day to beseech the ancient gods to liberate Egypt from servitude.
+
+Cleopatra by Stephen Herczeg
+
+120 AD
+Drusus and the Second Legion build the Emperor's wall block by block, day by day, while the Pictish warriors and witches watch and wait for their chance to bring it all tumbling down.
+
+The Turf Wall by Raven Corinn Carluk
+
+1447 AD
+Traded to the enemy in exchange for a tenuous peace, the young prince Vlad grows to become a killer of great renown—but he is so much more. A close brush with death, and a chance encounter with a beautiful, dark witch, changes not only him, but the fate of Wallachia forever.
+
+Son of the Devil by Zoey Xolton
+
+1945 AD
+As the second World War nears its end, two escaped American prisoners of war make a desperate journey to the city of Hiroshima, where a creature slumbering deep underground may be the only thing that could save it from destruction.
+
+Orochi by Jonathan Inbody
+
+1986 AD
+When Russian nuclear experimentation awakens dormant apocalyptic beasts, the Allied Ministry of Paranormal Defense send in their top two agents to stop Armageddon.
+
+Chernobyl's Awakening by Matt Lucas
+            </textarea>
+            </div>
+
+            <div class="filterDiv Anthology">
+                <h3>The Botanist's Sticker Anthology</h3>
+                <img src="./images/botanst's-sticker-ant.jpg">
+                <textarea readonly="true" rows="19" cols="19">Page after page is packed with beautiful vintage drawings of ornamental flowers, tropical ferns, and other exotic plants and fungi.
+
+              Get creative! Adorn your personal items with more than a thousand botanically themed images. Use the stickers for scrapbooking and stationery, create gorgeous artwork, or simply enjoy this book as an exquisite keepsake.</textarea>
+            </div>
+            <div class="filterDiv Children">
+                <h3>Bug Soup</h3>
+                <img src="./images/bug-sup.jpg">
+                <textarea readonly="true" rows="19" cols="19">Mrs. Hoop makes the soups for all the animals at her local zoo. Today, Mrs. Hoop received a super large soup order, but she's lost her "Soup List"! Can you help Mrs. Hoop match each pot of soup with the correct animal?</textarea>
+            </div>
+
+            <div class="filterDiv Comic book science fiction">
+                <h3>Space Force: Chepo Team</h3>
+                <img src="./images/space-force.jpg">
+                <textarea readonly="true" rows="19" cols="19">Chepo Team is an independent cartoon comic about 3 superhero brothers that fight the good fight when tyranny arises while trying to make it through in today's America as normal kids. "Space Force: Chepo Team" is the third saga of their many adventures. This is a comic book that reflects our great American values. Get ready for great entertainment that you don't see anymore!</textarea>
+            </div>
+
+            <div class="filterDiv Drama">
+                <h3>One of Us Is Lying</h3>
+                <img src="./images/one-of-us.jpg">
+                <textarea readonly="true" rows="19" cols="19">FROM THE #1 NEW YORK TIMES BESTSELLING AUTHOR, KAREN McMANUS
+
+              “Pretty Little Liars meets The Breakfast Club” (Entertainment Weekly) in this “flat-out addictive” (RT Book Reviews) story of what happens when five strangers walk into detention and only four walk out alive.
+               
+              Pay close attention and you might solve this.
+              On Monday afternoon, five students at Bayview High walk into detention.
+                  Bronwyn, the brain, is Yale-bound and never breaks a rule.
+                  Addy, the beauty, is the picture-perfect homecoming princess.
+                  Nate, the criminal, is already on probation for dealing.
+                  Cooper, the athlete, is the all-star baseball pitcher.
+                  And Simon, the outcast, is the creator of Bayview High’s notorious gossip app.
+               
+              Only, Simon never makes it out of that classroom. Before the end of detention Simon's dead. And according to investigators, his death wasn’t an accident. On Monday, he died. But on Tuesday, he’d planned to post juicy reveals about all four of his high-profile classmates, which makes all four of them suspects in his murder. Or are they the perfect patsies for a killer who’s still on the loose?
+              
+              Everyone has secrets, right? What really matters is how far you would go to protect them.
+              
+              And don’t miss the sequel, One of Us is Next!
+              
+              Praise for One of Us Is Lying
+              
+              An Entertainment Weekly Best YA Book of the Year Selection
+              A Buzzfeed Best YA Book of the Year Selection
+              A Popcrush Best Young Adult Book of the Year Selection
+              A New York Public Library's Best Book for Teens Selection
+              A CBC Teen Choice Book Award Nominee
+              A Bustle Best Young Adult Book of May 2017
+              A Goodreads Best Young Adult Book of the Year Nominee
+              A YALSA Best Fiction Book Nominee
+              A YALSA Quick Pick for Reluctant Young Adult Readers
+              
+              “You’ll tear through this juicy, super-fun (if murder can ever be fun?) thriller."—Bustle
+              
+              "A whodunit with a Breakfast Club twist...following four unique voices on a chase to find the killer, this one will keep you guessing until the very, very end."—Popcrush
+              
+              "Twisty plotting, breakneck pacing and intriguing characterisation add up to an exciting, single-sitting thrillerish treat."—The Guardian
+              
+              "This is no ordinary whodunit…surprising and relevant."—USA Today
+              
+              “An addictive, devour-in-one-sitting thriller.”—Kara Thomas, author of The Darkest Corners, Little Monsters, and The Cheerleaders
+              
+              ★"[As] McManus's intense mystery unfolds...each character becomes more complex and nuanced, adding richness and depth to the suspense." —VOYA, Starred Review</textarea>
+            </div>
+            <div class="filterDiv Sports and leisure">
+                <h3>Legends</h3>
+                <img src="./images/legends.jpg">
+                <textarea readonly="true" rows="19" cols="19">From Magic Johnson to Michael Jordan to LeBron James to Steph Curry, ESPN's Howard Bryant presents the best from the hardwood--a collection of NBA champions and superstars for young sports fans! 
+
+              Fast-paced, adrenaline-filled, and brimming with out-of-this-world athleticism, basketball has won the hearts of fans all across America—yet it is particularly popular among kids and teens. Giants of the game like Steph Curry, LeBron, and Michael Jordan have transcended the sport to become cultural icons and role models to young fans. From the cornfields of Indiana and the hills of North Carolina, to the urban sprawl of New York City, Chicago and L.A., love of the game stretches from coast to coast.
+              
+              Featuring Top Ten Lists to chew on and debate, and a Top 40-style Timeline of Key Moments in Basektball History, this comprehensive collection includes the greatest dynasties, from the Bill Russell-era Celtics, to the Magic Jonson-led Lakers, to the Jordan-led Bulls, right up to the Tim Duncan-led Spurs. All the greats take flight toward the hoop in this perfect book for young fans who dream about stepping on an NBA court.
+              
+              "A trove of awesome athletic feats, game-changing stars of the past and present, and rich fodder for heated arguments."--Booklist
+              
+              "Hoops fans will find a goldmine of information guaranteed to deepen their basketball knowledge and their understanding of the game."--VOYA 
+              
+              "An easy hook for serious sports fans."--School Library Journal</textarea>
+
+            </div>
+
+            <div class="filterDiv Crime">
+                <h3>True Crime Stories</h3>
+                <img src="./images/ture-crime.jpg">
+                <textarea readonly="true" rows="19" cols="19">The world can be a very strange place in general and when you open the pages of this true crime anthology you will quickly learn that the criminal world specifically can be as bizarre as it is dangerous. In the following book, you will be captivated by mysterious missing person cases that defy all logic and a couple cases of murderous mistaken identity. Follow along as detectives conduct criminal investigations in order to solve cases that were once believed to be unsolvable. Every one of the crime cases chronicled in the pages of this book are as strange and disturbing as the next. The twelve true crime stories in this book will keep you riveted as you turn the pages, but they will probably also leave you with more questions than answers. For instance, you will be left pondering how two brothers from the same family could disappear with no trace in similar circumstances over ten years apart. You will also wonder how two women with the same first and last names, but with no personal connections, could be murdered within the same week in the same city. The examination of a number of true crime murder cases that went cold, but were later solved through scientific advances, will also keep you intrigued and reading. Open the pages of this book, if you dare, to read some of the most bizarre cases of disappearances, mistaken identity, and true murder. Some of the cases will disturb and anger you, but make no mistake, you will want to keep reading!</textarea>
+
+            </div>
+
+            <div class="filterDiv Fantasy">
+                <h3>Rhythm of War</h3>
+                <img src="./images/brandon-sanderson.jpg">
+                <textarea readonly="true" rows="19" cols="19">"Powerhouse narrating duo Michael Kramer and Kate Reading bring their outstanding skills to this stunning continuation of the Stormlight Archive series... This audiobook is truly a masterpiece of story and performance." (AudioFile Magazine, Earphones Award winner)
+
+              An instant number-one New York Times best seller and a USA Today and Indie best seller!
+              
+              The Stormlight Archive saga continues in Rhythm of War, the eagerly awaited sequel to Brandon Sanderson's number-one New York Times best-selling Oathbringer, from an epic fantasy writer at the top of his game.
+              
+              After forming a coalition of human resistance against the enemy invasion, Dalinar Kholin and his Knights Radiant have spent a year fighting a protracted, brutal war. Neither side has gained an advantage, and the threat of a betrayal by Dalinar’s crafty ally Taravangian looms over every strategic move. 
+              
+              Now, as new technological discoveries by Navani Kholin’s scholars begin to change the face of the war, the enemy prepares a bold and dangerous operation. The arms race that follows will challenge the very core of the Radiant ideals, and potentially reveal the secrets of the ancient tower that was once the heart of their strength. 
+              
+              At the same time that Kaladin Stormblessed must come to grips with his changing role within the Knights Radiant, his Windrunners face their own problem: As more and more deadly enemy Fused awaken to wage war, no more honorspren are willing to bond with humans to increase the number of Radiants. Adolin and Shallan must lead the coalition’s envoy to the honorspren stronghold of Lasting Integrity and either convince the spren to join the cause against the evil god Odium, or personally face the storm of failure. 
+              
+              A Macmillan Audio production from Tor Books</textarea>
+            </div>
+            <div class="filterDiv Horror">
+                <h3>Flesh & Bone</h3>
+                <img src="./images/bone.jpg">
+                <textarea readonly="true" rows="19" cols="19">Reeling from the devastation of Dust & Decay, Benny Imura and his friends plunge deep into the zombie-infested wastelands of the great Rot & Ruin. Benny, Nix, Lilah, and Chong journey through a fierce wilderness that was once America, searching for the jet they saw in the skies months ago. If that jet exists, then humanity itself must have survived somewhere.
+
+              Finding it is their best hope for having a future and a life worth living.But the Ruin is far more dangerous than any of them can imagine. Fierce animals hunt them. They come face to face with a death cult. And then there' s the zombies - swarms of them coming from the east, devouring everything in their paths. And these zoms are different.
+              
+              Faster, smarter, and infinitely more dangerous. Has the zombie plague mutated, or is there something far more sinister behind this new invasion of the living dead? One thing Benny and his companions can' t afford to forget: In the great Rot & Ruin, everything wants to kill you.</textarea>
+            </div>
+
+            <div class="filterDiv Mystery">
+                <h3>If She Knew </h3>
+                <img src="./images/if-she-knew.jpg">
+                <textarea readonly="true" rows="19" cols="19">“A masterpiece of thriller and mystery. Blake Pierce did a magnificent job developing characters with a psychological side so well described that we feel inside their minds, follow their fears and cheer for their success. Full of twists, this book will keep you awake until the turn of the last page.”
+              --Books and Movie Reviews, Roberto Mattos (re Once Gone)
+              
+              IF SHE KNEW (A Kate Wise Mystery) is book #1 in a new psychological thriller series by bestselling author Blake Pierce, whose #1 bestseller Once Gone (Book #1) (a free download) has received over 1,000 five star reviews.
+              
+              55 year old empty nester—and freshly retired FBI agent—Kate Wise finds herself drawn out of her quiet suburban life when her friend’s daughter is murdered in a home invasion—and she is implored to help.
+              
+              Kate thought she left the FBI behind after 30 years as their top agent, respected for her brilliant mind, tough street skills and her uncanny ability to hunt down serial killers. Yet Kate, bored with the quiet town, at a crossroads in life, is summoned by a friend she can’t turn down.
+              
+              As Kate hunts the killer, she soon finds herself at the forefront of a manhunt, as more bodies turn up—all suburban moms in perfect marriages—and it becomes apparent there is a serial killer stalking this quiet town. She unearths secrets from her neighbors she wishes she never knew, discovering that all is not what it seems in this picture of model streets and neighbors. Affairs and lying are rampant, and Kate must sift through the town’s underbelly if she will stop the killer from striking again.
+              
+              But this killer is one step ahead of her, and it may end up being Kate who is in danger.
+              
+              An action-packed thriller with heart-pounding suspense, IF SHE KNEW is book #1 in a riveting new series that will leave you turning pages late into the night.</textarea>
+            </div>
+
+            <div class="filterDiv Poetry">
+                <h3>You'll Come Back to Yourself</h3>
+                <img src="./images/You'll-come-back-to.jpg">
+                <textarea readonly="true" rows="19" cols="19">Dive into this collection of poetry and prose inspired by modern dating and broken relationships, perfect for fans of Rupi Kaur and Orion Carloto.
+
+              You'll Come Back to Yourself explores themes of lost love, infidelity, depression, body image, and ultimately the power women have in learning to choose themselves. Separated into three sections: Holding On, Ouroboros, and Letting Go, this collection is a cyclical expedition of self discovery.</textarea>
+            </div>
+            <div class="filterDiv Political thriller">
+                <h3>In Sheep's Clothing</h3>
+                <img src="./images/In-sheep's-clothing.jpg">
+                <textarea readonly="true" rows="19" cols="19">One man holds the reins of power. One man vows to protect him. One man vows to destroy him.
+              Caught in a game of chess he didn’t know he was playing until it was too late, the President makes the only move he can, plunging Washington and the nation into chaos. Stunned and reeling, Vice President David Kendall takes the oath of office and tries to heal a nation in mourning. But what the new president doesn’t realize is that things in the White House aren’t always what they appear to be, and sometimes what looks like the best option may turn out to be the worst. When one fatal decision triggers consequences he never envisioned, President Kendall finds himself caught up in the same game that cost his predecessor his life.
+              Although there was nothing he could have done, Secret Service Agent Matthew Richter is haunted by the death of the man he had vowed to protect. When his girlfriend dumps him and his boss tells him that his job is on the line, he thinks his life cannot get any worse. He soon realizes how wrong he is when he finds himself fighting to save another president from the deadly forces that he has unwittingly unleashed.
+              This new release by L.D. Beyer is a fast-paced, action-packed political thriller that will leave you on the edge of your seat.</textarea>
+            </div>
+
+            <div class="filterDiv Romance">
+                <h3>The Return</h3>
+                <img src="./images/The-return.jpg">
+                <textarea readonly="true" rows="19" cols="19">In the romantic tradition of Dear John, Nicholas Sparks returns with the story of an injured Navy doctor - and two women whose secrets will change the course of his life in this number one New York Times best seller.
+
+              Trevor Benson never intended to move back to New Bern, North Carolina. But when a mortar blast outside the hospital where he worked as an orthopedic surgeon sent him home from Afghanistan with devastating injuries, the dilapidated cabin he'd inherited from his grandfather seemed as good a place to regroup as any. 
+              
+              Tending to his grandfather's beloved beehives while gearing up for a second stint in medical school, Trevor isn't prepared to fall in love with a local...and yet, from their very first encounter, Trevor feels a connection with Deputy Sheriff Natalie Masterson that he can't ignore. But even as she seems to reciprocate his feelings, she remains frustratingly distant, making Trevor wonder what she's hiding. 
+              
+              Further complicating his stay in New Bern is the presence of a sullen teenage girl, Callie, who lives in the trailer park down the road. Trevor hopes Callie can shed light on the mysterious circumstances of his grandfather's death, but she offers few clues - until a crisis triggers a race to uncover the true nature of Callie's past, one more intertwined with the elderly man's passing than Trevor could ever have imagined. 
+              
+              In his quest to unravel Natalie and Callie's secrets, Trevor will learn the true meaning of love and forgiveness...and that in life, to move forward, we must often return to the place where it all began.</textarea>
+            </div>
+            <div class="filterDiv Satire">
+                <h3>Skin Tight</h3>
+                <img src="./images/Skin-tight.jpg">
+                <textarea readonly="true" rows="19" cols="19">This novel by Carl Hiaasen, author of Tourist Season and Native Tongue, begins as most thrillers do, with a killing. But this is no everyday, hum-drum, garden variety killing. Our hero, Nick Stranahan, a 42-year-old private investigator who has killed five men and been married five times, skewers his attacker's aorta with the razor-sharp bill of a stuffed marlin, setting off a roller coaster ride of events that will drop-kick Stranahan into the deep slime of Miami's prosperous plastic surgery industry.
+              As with Hiaasen's other books, Skin Tight is one long, extended farce, a comic take on everything from TV tabloid hosts to ambulance chasers, chronicling modern America's ever-growing penchant for tastelessness, self-absorption, and high sleaze.
+              
+              You will find yourself laughing in spite of yourself at wildly improbable characters like Chemo, a 7-foot monster with a face like a bowl of breakfast cereal; Heather Chappell, who wants to completely renovate her Barbi-doll body; and Reynaldo Flemm, the host of prime time's In Your Face, who stages mock attacks to his person in order to increase the Nielsen ratings.</textarea>
+
+            </div>
+
+            <div class="filterDiv science fiction">
+                <h3>Dune</h3>
+                <img src="./images/dune.jpg">
+                <textarea readonly="true" rows="19" cols="19">Soon to be a major motion picture directed by Denis Villeneuve, starring Timothée Chalamet, Josh Brolin, Jason Momoa, Zendaya, Rebecca Ferguson, Oscar Isaac, Javier Bardem, Dave Bautista, Stellan Skarsgård, and Charlotte Rampling.
+
+              Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, who would become the mysterious man known as Maud'dib. He would avenge the traitorous plot against his noble family - and would bring to fruition humankind's most ancient and unattainable dream. 
+              
+              A stunning blend of adventure and mysticism, environmentalism and politics, Dune won the first Nebula Award, shared the Hugo Award, and formed the basis of what is undoubtedly the grandest epic in science fiction. 
+              
+              Frank Herbert's death in 1986 was a tragic loss, yet the astounding legacy of his visionary fiction will live forever. </textarea>
+            </div>
+
+            <div class="filterDiv Short story Fantasy">
+                <h3>Dragons at Crumbling Castle</h3>
+                <img src="./images/Dragons.jpg">
+                <textarea readonly="true" rows="19" cols="19">A wonderful collection of short stories by master storyteller Sir Terry Pratchett, featuring dragons, dinosaurs, cavemen and car races!
+
+              Dragons have invaded Crumbling Castle, and all of King Arthur's knights are either on holiday or visiting their grannies. It's a disaster!
+              
+              Luckily, there's a spare suit of armour and a very small boy called Ralph who's willing to fill it. Together with Fortnight the Friday knight and Fossfiddle the wizard, Ralph sets out to defeat the fearsome fire-breathers.
+              
+              But there's a teeny weeny surprise in store...
+              
+              Fourteen fantastically funny stories from master storyteller Sir Terry Pratchett, full of time travel and tortoises, monsters and mayhem!
+              
+              Story List:
+              
+              CD 1: Dragons at Crumbling Castle, The Great Speck, Hunt the Snorry, Tales of the Carpet People (beginning)
+              
+              CD 2: Tales of the Carpet People (concluded), Hercules the Tortoise, Dok the Caveman, The Big Race
+              
+              CD 3: Another Tale of the Carpet People, The Great Egg - dancing Championship, Edwo the Boring Knight
+              
+              CD 4: The 59A Bus Goes Back in Time, The Abominable Snowman, The Blackbury Monster, Father Christmas Goes to Work at the Zoo</textarea>
+
+            </div>
+
+            <div class="filterDiv Business/economics">
+                <h3>The Money GPS</h3>
+                <img src="./images/money-gps.jpg">
+                <textarea readonly="true" rows="19" cols="19">With a solid foundation and minimal maintenance, anyone can understand exactly what's truly going on in the world. There is a definite game plan where you stick to the principles, apply the formula, and achieve wealth, regardless of the economic conditions. David Quintieri's book, The Money GPS, takes the complexity of the financial system and transforms it into simplicity. The frequent use of diagrams and charts allows the reader to learn visually, making a complex subject easy for anyone to learn. The clock is ticking in this world of paper money. Unpayable debts are piling up all over the world and are attempted to be resolved by adding even more debt. This system will COLLAPSE, creating the greatest wealth transfer in the history of the world: from those who hold paper, to those holding real assets. The Money GPS empowers and prepares the reader in these uncertain times.</textarea>
+            </div>
+
+            <div class="filterDiv Crafts/hobbies">
+                <h3>Crafting</h3>
+                <img src="./images/crafting.jpg">
+                <textarea readonly="true" rows="19" cols="19">Whether you want to (1) learn how to make exciting new crafts, (2) make beautiful crafted works of art, or (3) just enjoy a variety of incredible crafts that you can make for yourself, family and friends, this book will guide on how to easily start making your very own professional looking crafts.
+
+              Need new craft ideas? Wish you could make something beautiful enough to sell?
+              
+              Crafting can open up a world of possibilities. Add beauty, or a touch of whimsy, to your surroundings. Create jewelry to match your outfits and décor to add character to your home. Some of these crafts are so beautiful that you’d never know they cost pennies to make! I’ve known crafters to sell necklaces right off their necks and rings off their fingers.
+              
+              If you’ve never scrapbooked before, you’ll find a variety of ways to make compelling and exciting scrapbooks. You won’t need to be an expert in art or design to create attractive scrapbook pages; the tips and advice included in the scrapbook chapter will guide you to a successful scrapbooking experience.
+              
+              Preserve the memory of important events and delightful experiences in a form that you and others can delight in looking at time after time. Save those precious moments with your children; capture their unforgettable quotes, first discoveries and growing personalities to remember and pass on to them. Along the way, preserve your own thoughts and observations as your children grow and you watch their gifts and abilities blossom.
+              
+              Explore new forms of crafting.
+              
+              If you need a break from your current craft,then try out beadwork, yarn, needlework and clay crafts. Explore wood burning as a new art form. Add class to napkins by introducing accents that involve buttons. Create colorful suncatchers to add color and warmth to your rooms. There are a dozen chapters here, chock-full of crafts that use items you may have never tried working with before. Isn’t it time to discover something new?
+              
+              De-stress while sharpening your mind.
+              
+              Boost your confidence by completing one of the simpler crafts in a single setting. Easily make practical crafts; create colorful jewelry beads, fabricate stepping stones to commemorate a beloved pet, capture the seasons in colorful wall hangings, or celebrate holidays with unique wreaths and centerpieces. Challenge yourself by adding complexity to a well-known craft form by simply following the clear instructions provided in this book.
+              
+              What will you Learn about crafting?
+              
+              The best ways to set up and maintain a craft area.
+              How to make fabric crafts, even if you don’t know how to sew.
+              Simple techniques for painting on almost anything.
+              How to make candles, soaps, and other items that smell oh, so good!
+              How to create simple accent pieces that look professionally made.
+              
+              
+              You will also Discover:
+              
+              Fresh scrapbooking ideas and tips.
+              The amazing versatility of washi tape and how to use it to add beauty to virtually anything.
+              Wonderful wooden crafts.
+              How to craft beautiful custom-tailored jewelry and over 100 pictures!
+              </textarea>
+            </div>
+
+            <div class="filterDiv Cookbook">
+                <h3>The Bob's Burgers Burger Book</h3>
+                <img src="./images/bob's-burgers.jpg">
+                <textarea readonly="true" rows="19" cols="19">New York Times Bestseller The Bob’s Burgers Burger Book gives hungry fans their best chance to eat one of Bob Belcher’s beloved specialty Burgers of the Day in seventy-five original, practical recipes. With its warm, edgy humor, outstanding vocal cast, and signature musical numbers, Bob’s Burgers has become one of the most acclaimed and popular animated series on television, winning the 2014 Emmy Award for Outstanding Animated Program and inspiring a hit ongoing comic book and original sound track album. Now fans can get the ultimate Bob’s Burgers experience at home with seventy-five straight from the show but actually edible Burgers of the Day. Recipes include the "Bleu is the Warmest Cheese Burger," the "Bruschetta-Bout-It Burger," and the "Shoot-Out at the OK-ra Corral Burger (comes with Fried Okra)." Serve the "Sweaty Palms Burger (comes with Hearts of Palm)" to your ultimate crush, just like Tina Belcher, or ponder modern American literature with the "I Know Why the Cajun Burger Sings Burger." Fully illustrated with all-new art in the series’s signature style, The Bob’s Burgers Burger Book showcases the entire Belcher family as well as beloved characters including Teddy, Jimmy Pesto Jr., and Aunt Gayle. All recipes come from the fan-created and heavily followed blog "The Bob’s Burger Experiment."</textarea>
+            </div>
+
+            <div class="filterDiv Thriller">
+                <h3>The Housekeeper</h3>
+                <img src="./images/the-housekeeper.jpg">
+                <textarea readonly="true" rows="19" cols="19">She's a liar. She's a stalker. She's in your house.
+
+              When Claire sees Hannah Wilson at an exclusive Manhattan hair salon, it's like a knife slicing through barely healed scars. It may have been ten years since Claire last saw Hannah, but she has thought of her every day, and not in a good way. So Claire does what anyone would do in her position—she stalks her.
+              
+              Hannah is now Mrs. Carter, living the charmed life that should have been Claire's. It's the life Claire used to have, before Hannah came along and took it all away from her.
+              
+              Back then, Claire was a happy teenager with porcelain skin and long, wavy blond hair. Now she's an overweight, lazy drunk with hair the color of compost and skin to match. Which is why when Hannah advertises for a housekeeper, Claire is confident she can apply and not be recognized. And since she has time on her hands, revenge on her mind, and a talent for acting…
+              
+              Because what better way to seek retribution—and redress—than from within the beautiful Mrs. Hannah Carter's own home?
+              
+              Except that it's not just Claire who has secrets. Everyone in that house seems to have something to hide.
+              
+              And now, there's no way out.
+              
+              
+              What readers are saying about The Housekeeper:
+              One of the best cat and mouse books I have read in a long time! Goodreads reviewer, 5 stars
+              
+              This is a tense thriller … dark and bitingly funny humor that gets weaved in. The twist was totally unexpected, and I was very satisfied from start to finish! Goodreads reviewer, 5 stars
+              
+              Riveting! Couldn’t put it down! Goodreads reviewer, 5 stars
+              
+              Well written and twisty! Goodreads reviewer, 5 stars
+              
+              This is one of my faves so far! The story line just drew me in and I honestly could not stop reading it! Amazon reviewer, 5 stars</textarea>
+            </div>
+
+            <div class="filterDiv Diary">
+                <h3>Diary Of A Bookseller</h3>
+                <img src="./images/diray of a bookseller.webp">
+                <textarea readonly="true" rows="19" cols="19">"Among the most irascible and amusing bookseller memoirs I've read." —Dwight Garner, The New York Times
+ 
+              "Warm, witty and laugh-out-loud funny..." —The Daily Mail
+               
+              The Diary of a Bookseller is Shaun Bythell's funny and fascinating memoir of a year in the life at the helm of The Bookshop, in the small village of Wigtown, Scotland—and of the delightfully odd locals, unusual staff, eccentric customers, and surreal buying trips that make up his life there as he struggles to build his business . . . and be polite . . .
+               
+              In this wry and hilarious diary, he tells us the trials and tribulations of being a small businessman; of learning that customers can be, um, eccentric; and of wrangling with his own staff of oddballs. And perhaps none are quirkier than the charmingly cantankerous bookseller Bythell himself turns out to be.
+               
+              Slowly, with a mordant wit and keen eye, Bythell is seduced by the growing charm of small-town life, despite—or maybe because of—all the peculiar characters there.</textarea>
+            </div>
+
+            <div class="filterDiv Dictionary">
+                <h3>New Oxford American Dictionary</h3>
+                <img src="./images/new-oxford.jpg">
+                <textarea readonly="true" rows="19" cols="19">As Oxford's flagship American dictionary, the New Oxford American Dictionary sets the standard of excellence for lexicography in this country. With more than 350,000 words, phrases, and senses, hundreds of explanatory notes, and more than a thousand illustrations, this dictionary provides the most comprehensive and accurate coverage of American English available.
+
+              The dictionary draws on the two-billion-word Oxford English Corpus and the unrivaled citation files of the world-renowned Oxford English Dictionary to provide the most accurate and richly descriptive picture of American English ever offered in any dictionary. The Third Edition offers a thoroughly updated text, with revisions throughout and approximately 2,000 new words, phrases, and meanings. Many new words relate to fast-moving areas such as computing, technology, current affairs, and ecology, while others have recently entered the popular lexicon. Usage notes have been updated in light of the most recent Corpus evidence, and a completely new in-text feature on Word Trends charts usage for rapidly changing words and phrases such as carbon, mobile, or tweet. In addition, the volume has an attractive, modern new text design that makes entries easier to read and find.
+              
+              One of the hallmarks of the New Oxford American Dictionary is the way it reflects the living language. Unlike in more traditional dictionaries, where meanings are ordered chronologically according to the history of the language, each entry plainly shows the principal meaning or meanings of the word, organized by importance in today's English. Thus readers can be confident that the first definition they see is the one most likely to be used by people today, and is not a sense that has been obsolete for two centuries.
+              
+              Offering clear, authoritative, and precise information, with the in-depth and up-to-date coverage that users need and expect, the New Oxford American Dictionary is the benchmark by which all other American dictionaries are measured.</textarea>
+            </div>
+
+            <div class="filterDiv Western">
+                <h3>Montana Territory</h3>
+                <img src="./images/Montana-teritory.jpg">
+                <textarea readonly="true" rows="19" cols="19">From Spur Award-winning author Charles G. West comes a blistering tale of the American West, where guns are the law, good men are outnumbered—and  sudden death  is a way of life . . .
+ 
+              MASSACRE IN MONTANA
+               
+              Raised among the Blackfoot, John Hawk is a valuable asset to the US Army. As a military scout at Fort Ellis, he is able to cross the line between two worlds—and help keep the peace. But when he disobeys a direct order from his commander, Hawk is immediately dismissed from his post.
+              That was the army’s first mistake.
+               
+              The second was losing track of a small mule train en route to Helena. At the request of his former lieutenant, Hawk leaves his cabin on the Boulder River to help find the missing party. The mule train, it appears, was ambushed by a savage gang of outlaws. Most of the travelers were murdered. Only a few survived to tell the tale. And now it’s up to Hawk to stalk the killers across the lawless Montana territory—alone. No backup. No calvary. No mercy . . .
+               
+              “Rarely has an author painted the great American West in strokes so bold, vivid, and true.”
+              —Ralph Compton</textarea>
+            </div>
+            <div class="filterDiv Autobiography">
+                <h3>Rage</h3>
+                <img src="./images/Rage.jpg">
+                <textarea readonly="true" rows="19" cols="19">Bob Woodward’s new book, Rage, is an unprecedented and intimate tour de force of new reporting on the Trump presidency facing a global pandemic, economic disaster and racial unrest.
+
+              Woodward, the number one international best-selling author of Fear: Trump in the White House, has uncovered the precise moment the president was warned that the Covid-19 epidemic would be the biggest national security threat to his presidency. In dramatic detail, Woodward takes listeners into the Oval Office as Trump’s head pops up when he is told in January 2020 that the pandemic could reach the scale of the 1918 Spanish Flu that killed 675,000 Americans. 
+              
+              In 17 on-the-record interviews with Woodward over seven volatile months - an utterly vivid window into Trump’s mind - the president provides a self-portrait that is part denial and part combative interchange mixed with surprising moments of doubt as he glimpses the perils in the presidency and what he calls the “dynamite behind every door.” 
+              
+              At key decision points, Rage shows how Trump’s responses to the crises of 2020 were rooted in the instincts, habits and style he developed during his first three years as president. Revisiting the earliest days of the Trump presidency, Rage reveals how Secretary of Defense James Mattis, Secretary of State Rex Tillerson and Director of National Intelligence Dan Coats struggled to keep the country safe as the president dismantled any semblance of collegial national security decision making. Rage draws from hundreds of hours of interviews with firsthand witnesses as well as participants’ notes, emails, diaries, calendars and confidential documents. 
+              
+              Woodward obtained 25 never-seen personal letters exchanged between Trump and North Korean leader Kim Jong Un, who describes the bond between the two leaders as out of a “fantasy film.” Trump insists to Woodward he will triumph over Covid-19 and the economic calamity. “Don’t worry about it, Bob. Okay?” Trump told the author in July. “Don’t worry about it. We’ll get to do another book. You’ll find I was right.”
+              
+              Includes excerpts from Bob Woodward’s interviews with President Donald J. Trump for Rage. </textarea>
+            </div>
+
+            <div class="filterDiv Art/architecture">
+                <h3>Find Your Artistic Voice</h3>
+                <img src="./images/art.jpg">
+                <textarea readonly="true" rows="19" cols="19">
+              An artist's unique voice is their calling card. It's what makes each of their works vital and particular. But developing such singular artistry requires effort and persistence.
+
+Best-selling author, artist, and illustrator Lisa Congdon brings her expertise to this guide to the process of artistic self-discovery. Featuring advice from Congdon herself and interviews with a roster of established artists, illustrators, and creatives, this one-of-a-kind book will show listeners how to identify and nurture their own visual identity, navigate the influence of artists they admire, push through fear and insecurity, and appreciate the value of their personal journey.
+            </textarea>
+            </div>
+            <div class="filterDiv Biography">
+                <h3>Elon Musk</h3>
+                <img src="./images/rocket-man.jpg">
+                <textarea readonly="true" rows="19" cols="19">In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of one of Silicon Valley's most exciting, unpredictable, and ambitious entrepreneurs - a real-life Tony Stark - and a fascinating exploration of the renewal of American invention and its new makers.
+
+              Elon Musk spotlights the technology and vision of Elon Musk, the renowned entrepreneur and innovator behind SpaceX, Tesla, and SolarCity, who sold one of his Internet companies, PayPal, for $1.5 billion. Ashlee Vance captures the full spectacle and arc of the genius' life and work, from his tumultuous upbringing in South Africa and flight to the United States to his dramatic technical innovations and entrepreneurial pursuits.
+              
+              Vance uses Musk's story to explore one of the pressing questions of our age: Can the nation of inventors and creators who led the modern world for a century still compete in an age of fierce global competition? He argues that Musk - one of the most unusual and striking figures in American business history - is a contemporary, visionary amalgam of legendary inventors and industrialists, including Thomas Edison, Henry Ford, Howard Hughes, and Steve Jobs. More than any other entrepreneur today, Musk has dedicated his energies and his own vast fortune to inventing a future that is as rich and far reaching as the visionaries of the golden age of science-fiction fantasy.</textarea>
+            </div>
+
+            <div class="filterDiv Encyclopedia">
+                <h3>Myths, Legends, and Sacred Stories</h3>
+                <img src="./images/en.jpg">
+                <textarea readonly="true" rows="19" cols="19">From lightning-wielding Zeus, the supreme Greek god, to protective Hathor, the Egyptian goddess of love - heroes, gods, and monsters are brought to life in these retellings of myths from around the world.
+
+              Myths, Legends, and Sacred Stories is a children's audiobook that invites you to explore all the well-known stories from Greek and Norse mythology, and a range of other cultures across more than 100 tales. 
+              
+              Discover the fascinating myths of Anansi, the West African trickster god who takes the form of a spider; the story of the Wawilak Sisters of Arnhem Land in northern Australia, who form the land as they walk across it; or the Slavic tale of Ivan as he chases the mischievous Firebird. 
+              
+              Listen about ferocious, man-eating monsters such as the Minotaur and Fafnir the dragon, and the legendary heroes that fought them, like Theseus and Sigurd. Also included are the legends of Robin Hood, and of King Arthur and the Knights of the Round Table, epics from Asia, such as the Mahabharata and Gilgamesh, and a host of tales from Aztec mythology and a range of other cultures. 
+              
+              As well as offering the retellings themselves, Myths, Legends, and Sacred Stories: a children's encyclopedia investigates the meanings of these primal stories, examining why these tales have stood the test of time over thousands of years. Themed features draw together elements that are common to myths from all over the world, such as shapeshifters, mythical beasts, and magical weapons. Panels on modern retellings, such as Percy Jackson and The Little Mermaid, help to show why these myths are still relevant to our lives today.
+              
+              Philip Wilkinson has more than 50 titles to his credit in the fields of history, mythology, and the arts. He is the writer of DK's Myths and Legends: a guide to their origins and meanings, a co-writer of Eyewitness Companion: Mythology, and the consultant on The Mythology Book: Big Ideas Simply Explained.</textarea>
+            </div>
+
+            <div class="filterDiv Health/fitness">
+                <h3>The Mind-Gut Connection</h3>
+                <img src="./images/mind-gut.jpg">
+                <textarea readonly="true" rows="19" cols="19">Combining cutting-edge neuroscience with the latest discoveries on the human microbiome, a practical guide in the tradition of Wheat Belly and Grain Brain that conclusively demonstrates the inextricable biological link between mind and body.
+
+              We have all experienced the connection between our mind and our gut - the decision we made because it "felt right"; the butterflies in our stomach before a big meeting; the anxious stomach rumbling when we're stressed out. While the dialogue between the gut and the brain has been recognized by ancient healing traditions, including Ayurvedic and Chinese medicine, Western medicine has failed to appreciate the complexity of how the brain, gut, and, more recently, the microbiome - the microorganisms that live inside us - communicate with one another. In The Mind-Gut Connection, Dr. Emeran Mayer, executive director of the UCLA Oppenheimer Center for Neurobiology of Stress and Resilience, offers a revolutionary look at this developing science, teaching us how to harness the power of the mind-gut connection to take charge of our health.
+              
+              The Mind-Gut Connection describes:
+              
+              Why consuming a predominantly plant-based diet is key for gut and brain health
+              The importance of early childhood in gut-brain development and what parents can do to help their children thrive
+              The role of excessive stress and anxiety in GI ailments and cognitive disorders
+              How to "listen to your gut" and pay attention to the signals your body is sending you
+              And much more</textarea>
+            </div>
+
+            <div class="filterDiv Humor">
+                <h3>Humor, Seriously</h3>
+                <img src="./images/humor.jpg">
+                <textarea readonly="true" rows="19" cols="19">WALL STREET JOURNAL, LOS ANGELES TIMES, AND USA TODAY BESTSELLER • Anyone—even you!—can learn how to harness the power of humor in business (and life), based on the popular class at Stanford's Graduate School of Business.
+ 
+              “The ultimate guide to using the magical power of funny as a tool for leadership and a force for good.”—Daniel H. Pink, #1 New York Times bestselling author of When and Drive
+              
+              There exists a mistaken belief in today’s corporate world: that we have to be serious all the time in order to be taken seriously. But the research tells a different story: that humor can be one of the most powerful tools we have for accomplishing serious things. Studies show that humor makes us appear more competent and confident, strengthens relationships, unlocks creativity, and boosts our resilience during difficult times. Plus, it fends off a permanent and unsightly frown known as “resting boss face.”
+              
+              Top executives are in on the secret: 98 percent prefer employees with a sense of humor, and 84 percent believe that these employees do better work. But even for those who intuitively understand humor’s power, few know how to wield it with intention. As a result, humor is vastly underleveraged in most workplaces today, impacting our performance, relationships, and health.
+              
+              That’s why Jennifer Aaker and Naomi Bagdonas teach the popular course Humor: Serious Business at the Stanford Graduate School of Business, where they help some of the world’s most hard-driving, blazer-wearing business minds build levity into their organizations and lives.
+              
+              In Humor, Seriously, they draw on findings by behavioral scientists, world-class comedians, and inspiring business leaders to reveal how humor works and—more important—how you can use more of it, better.
+              
+              Aaker and Bagdonas unpack the theory and application of humor: what makes something funny and how to mine your life for material. They show how to use humor to make a strong first impression, deliver difficult feedback, persuade and motivate others, and foster cultures where levity and creativity can thrive—not to mention, how to keep it appropriate and recover if you cross a line.
+              
+              President Dwight David Eisenhower once said, “A sense of humor is part of the art of leadership, of getting along with people, of getting things done.” If Dwight David Eisenhower, the second least naturally funny president ever (after Franklin Pierce), thought humor was necessary to win wars, build highways, and warn against the military-industrial complex, then you might consider learning it too.</textarea>
+            </div>
+
+            <div class="filterDiv Journal History">
+                <h3>Air War in the Pacific </h3>
+                <img src="./images/air-war-pacific.jpg">
+                <textarea readonly="true" rows="19" cols="19">Air War in the Pacific details the development and ultimate supremacy of the US Air Force during World War 2. Written from the perspective of General George C. Kenney, the man in charge, the book is a candid insider’s account of how America turned the tables on the Japanese in the Pacific through a combination of strategy, tactics, and superior air technology.
+
+              An entertaining read, as well as an important historical document, Air War in the Pacific features a cast of larger-than-life personalities know to WW2 buffs, from brilliant tactician ‘Big Chief’ General Douglas MacArthur to eccentric hotshot pilot Paul ‘Pappy’ Gunn.</textarea>
+            </div>
+
+            <div class="filterDiv Religion">
+                <h3>The Holy Qur'an </h3>
+                <img src="./images/quran.jpg">
+                <textarea readonly="true" rows="19" cols="19">The Holy Qur'an (also known as The Koran) is the sacred book of Islam. It is the word of God whose truth was revealed to the Prophet Muhammad through the angel Gabriel over a period of 23 years. As it was revealed, so it was committed to memory by his companions, though written copies were also made by literate believers during the lifetime of the Prophet. The first full compilation was by Abu Bakar, the first Caliph, and it was then recompiled in the original dialect by the third Caliph Uthman, after the best reciters had fallen in battle. Muslims believe that the truths of The Holy Qur'an are fully and authentically revealed only in the original classical Arabic. However, as the influence of Islam grows and spreads to the modern world, it is recognised that translation is an important element in introducing and explaining Islam to a wider audience. This translation, by Abdullah Yusuf Ali, is considered to be the most faithful rendering available in English.</textarea>
+            </div>
+
+            <div class="filterDiv Science">
+                <h3>The Science Book</h3>
+                <img src="./images/science.jpg">
+                <textarea readonly="true" rows="19" cols="19">Discover 80 trail-blazing scientific ideas, which underpin our modern world, giving us everything from antibiotics to gene therapy, electricity to space rockets and batteries to smart phones.
+
+              What is string theory or black holes? And who discovered gravity and radiation? The Science Book presents the fascinating story behind these and other of the world’s most important concepts in maths, chemistry, physics and biology in plain English, with easy to grasp “mind maps” and eye-catching artworks.
+              
+              Albert Einstein once quoted Isaac Newton: “If I have seen further than others, it is by standing on the shoulders of giants.” Follow context panels in The Science Book to trace how one scientist’s ideas informed the next. See, for example, how Alan Turing’s “universal computing machine” in the 1940s led to smart phones, or how Carl Linnaeus’s classifications led to Darwin’s theory of evolution, the sequencing of the human genome and lifesaving gene therapies.
+              
+              Part of the popular Big Ideas series, The Science Book is the perfect way to explore this fascinating subject.
+              
+              Series Overview: Big Ideas Simply Explained series uses creative design and innovative graphics along with straightforward and engaging writing to make complex subjects easier to understand. With over 7 million copies worldwide sold to date, these award-winning books provide just the information needed for students, families, or anyone interested in concise, thought-provoking refreshers on a single subject.
+              </textarea>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>
